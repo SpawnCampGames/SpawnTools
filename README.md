@@ -17,7 +17,7 @@ The sound effect sources populate the other list and is managed by SpawnDJ.. Whe
 looping through the sound effect sources available, finding the first source available (thats not currently being used), and playing the clip.
 If no source is available then it creates a new source, plays the clip, then destroys that source. 
 
-*Generate AudioSources must be ran before any SpawnDJ function will work.*
+		*Generate AudioSources must be ran before any SpawnDJ function will work.*
 
 ### SpawnAudio.cs
 *A script to create the audio manager, audiosources, and setup the hierarchy, all inside the editor.*
@@ -30,7 +30,8 @@ If no source is available then it creates a new source, plays the clip, then des
 *A singleton created by SpawnAudio.cs that allows you to call basic functions to control the audiosources*
 
 - Call a function from the SpawnDJ class from anywhere in your project with:
-SpawnDJ.Instance.Function();
+
+		SpawnDJ.Instance.Function();
 
 
 
