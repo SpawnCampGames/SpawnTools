@@ -2,14 +2,15 @@
  A collection of Unity Tools
 
 ## Spawn Audio v 1
-Spawn Audio is a collection of (3) scripts that simplify the process of creating an audio system in your project.
+Spawn Audio is a collection of (3) scripts that simplify the process of creating an audio system in your project.  
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
 needed to have a working system as soon as you Play ▶️
 
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudio.png)
 
 It works by creating a singleton, `SpawnDJ`, that contains a list of Methods for manipulating
-the AudioSources just created. To play audio you just pass in a clip.
+the AudioSources just created.  
+To play audio you just pass in a clip.
 
 To call any of these functions or to play audio just call `SpawnDJ.Instance.SomeFunction();` 
 from anywhere in your project.
@@ -30,13 +31,14 @@ The default values for the AudioSources to be created.
 
 #### _Ambient Audio CLips_
 
-Drag in clips for your background audio. They will automatically be assigned and loop during runtime.
+Drag in clips for your background audio.  
+They will automatically be assigned and loop during runtime.
 
 Fill Out the inspector and Generate AudioSources
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudioHierarchy.png)
 
-The Component will gray itself out after Generating. Any additional changes to the AudioSources
-can be made through the `SpawnDJ` at runtime.
+The Component will gray itself out after Generating.  
+Any additional changes to the AudioSources can be made through the `SpawnDJ` at runtime.
 
 ### 📄 SpawnDJ.cs
 ---
