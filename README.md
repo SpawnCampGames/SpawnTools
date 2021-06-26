@@ -17,19 +17,16 @@ from anywhere in your project.
 
 ### 📄 SpawnAudio.cs
 ---
-*The main script, and the one responsible for creating the GameObjects, AudioSources, and `SpawnDJ`*
+*Main script, and responsible for creating the GameObjects, AudioSources, and `SpawnDJ`*
 
 #### _Channels_
-This is the # of AudioSources that will be created to play AudioClips.
+
+This is the number of AudioSources that will be created to play AudioClips.
 The more sources the less likely you'll have to create an additional AudioSource.
 
-*Additional AudioSources can be created with `SpawnDJ` during runtime*
-
 #### _Sfx / Background Volume_
+
 The default values for the AudioSources to be created.
-
-*Can be changed during runtime with `SpawnDJ` and reset to these defaults at anytime*
-
 
 
 ### 📄 SpawnDJ.cs
