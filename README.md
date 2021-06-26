@@ -3,23 +3,17 @@
 
 ## Spawn Audio
 ---
-
 Spawn Audio is a collection of (3) scripts that simplify the process of creating a audio system in your project.
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
 needed to have a working system as soon as you Play ▶️
 
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudio.png)
 
-It works by creating a singleton, `SpawnDJ` that contains a list of Methods that can manipulate
-the AudioSources just created as well as take in au
-It contains a full list of functions to manage the AudioSources generated, and a way to easily play audio.
+It works by creating a singleton, `SpawnDJ`, that contains a list of Methods for manipulating
+the AudioSources just created. To play audio you just pass in a clip.
 
-To call any of these functions or to play audio call:
-
-`SpawnDJ.Instance.SomeFunction();`
-
+To call any of these functions or to play audio just call `SpawnDJ.Instance.SomeFunction();` 
 from anywhere in your project.
-
 
 ### 📄 SpawnAudio.cs
 ---
