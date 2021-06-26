@@ -30,8 +30,7 @@ If no source is available then it creates a new source, plays the clip, then des
 *A singleton created by SpawnAudio.cs that allows you to call basic functions to control the audiosources*
 
 - Call a function from the SpawnDJ class from anywhere in your project with:
-
-	SpawnDJ.Instance.Function();
+SpawnDJ.Instance.Function();
 
 
 
