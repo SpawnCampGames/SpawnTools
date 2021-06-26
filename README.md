@@ -1,7 +1,7 @@
 # SpawnTools
  A collection of Unity Tools
 
-## Spawn Audio  v1
+## Spawn Audio v 1
 Spawn Audio is a collection of (3) scripts that simplify the process of creating an audio system in your project.
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
 needed to have a working system as soon as you Play ▶️
@@ -42,9 +42,16 @@ can be made through the `SpawnDJ` at runtime.
 ---
 *Singleton that's created by `SpawnAudio`. Allows you to call basic functions to control the AudioSources*
 
-
-
 **This Component sits alongside the SpawnAudio Component but is Hidden in the Hierarchy**
+
+Contains (2) Lists.
+- `audioSources` // list of your sound effect sources
+- `backgroundSources` // list of your background loop sources
+
+Possibly a third.
+- `additionalSources` // any audiosource created during runtimea
+
+
 
 Call a function from the SpawnDJ class from anywhere in your project with:
 
