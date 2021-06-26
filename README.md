@@ -71,26 +71,29 @@ To Play an Audio Clip use:
 If all AudioSources are being used a new AudioSources will be created and added to the `additionalSources` list.   
 As soon as the clip is finished the clip will be removed from the list and destroyed.
 
-#### List of Functions Currently Available
+### List of Functions Currently Available
 
-Managing AudioSources
+#### Managing AudioSources
 - `CreateNewAudioSource();`
-- `RemoveExtraAudioSources();`
-Muting
+- `RemoveExtraAudioSources();`  
+
+#### Muting
 - `MuteAllAudio();`
 - `MuteBackgroundAudio();`
 - `MuteSfx();`
 - `UnmuteAllAudio();`
 - `UnmuteBackgroundAudio();`
-- `UnmuteSfx();`
-Pausing
+- `UnmuteSfx();`  
+
+#### Pausing
 - `PauseAllAudio();`
 - `PauseBackgroundAudio();`
 - `PauseSfx();`
 - `UnPauseAllAudio();`
 - `UnPauseBackgroundAudio();`
-- `UnPauseSfx();`
-Volume
+- `UnPauseSfx();`  
+
+#### Volume
 - `SetMasterVolume(volume);`
 - `RecoverMasterVolume();`
 - `SetSfxVolume(volume);`
