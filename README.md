@@ -2,6 +2,7 @@
  A collection of Unity Tools
 
 ## SpawnAudio v1
+---
 Spawn Audio is a collection of (3) scripts that simplify the process of creating an audio system in your project.  
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
 needed to have a working system as soon as you Play ▶️
@@ -15,9 +16,9 @@ To call any of these functions or to play audio just call `SpawnDJ.Instance.Some
 from anywhere in your project.
 
 
-### 📄 SpawnAudio.cs
+## 📄 SpawnAudio.cs
 ---
-*- Main script, and Responsible for creating the GameObjects, AudioSources, and `SpawnDJ` -*
+### *- Main script, and Responsible for creating the GameObjects, AudioSources, and `SpawnDJ` -*
 
 #### _Channels_
 
@@ -40,9 +41,9 @@ Fill Out the inspector and Generate AudioSources
 The Component will gray itself out after Generating.  
 Any additional changes to the AudioSources can be made through the `SpawnDJ` at runtime.
 
-### 📄 SpawnDJ.cs
+## 📄 SpawnDJ.cs
 ---
-*- Singleton that's created by `SpawnAudio` -*
+### *- Singleton that's created by `SpawnAudio` -*
 
 *Allows you to call basic functions to control the AudioSources  
 This Component sits alongside the SpawnAudio Component but is Hidden in the Hierarchy*
@@ -56,7 +57,7 @@ and possibly a third.
 
 ### To gain access to these Lists use:
 
-`SpawnDJ.Instance.audioSources;` or `SpawnDJ.Instance.backgroundSources;`
+`SpawnDJ.audioSources;` or `SpawnDJ.backgroundSources;`
 
 ### Call a function from the SpawnDJ class from anywhere in your project with:
 
@@ -74,8 +75,8 @@ As soon as the clip is finished the clip will be removed from the list and destr
 ### List of Functions Currently Available
 
 #### Managing AudioSources
-- `CreateNewAudioSource();`
-- `RemoveExtraAudioSources();`  
+- `CreateNewAudioSource();` //creates a new source to play sound effects
+- `RemoveExtraAudioSources();`  //removes it
 
 #### Muting
 - `MuteAllAudio();`
@@ -94,9 +95,12 @@ As soon as the clip is finished the clip will be removed from the list and destr
 - `UnPauseSfx();`  
 
 #### Volume
-- `SetMasterVolume(volume);`
-- `RecoverMasterVolume();`
+- `SetMasterVolume(volume);` //sets volume to a float
+- `RecoverMasterVolume();` //sets volume to values used to generate audiosources
 - `SetSfxVolume(volume);`
 - `RecoverSfxVolume();`
 - `SetBackgroundVolume(volume);`
-- `RecoverBackgroundVolume();`
+- `RecoverBackgroundVolume();`  
+
+#### Playing Audio
+- `PlayClip(clip);` // play an audio clip
