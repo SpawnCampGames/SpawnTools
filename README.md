@@ -14,20 +14,17 @@ the AudioSources just created. To play audio you just pass in a clip.
 To call any of these functions or to play audio just call `SpawnDJ.Instance.SomeFunction();` 
 from anywhere in your project.
 
+
 ### 📄 SpawnAudio.cs
 ---
 *The main script, and the one responsible for creating the GameObjects, AudioSources, and `SpawnDJ`*
 
-**Game Audio**
-These are the default values and not edible after you Generate AudioSources.
-*Can be changed through `SpawnDJ` during runtime*
-
-[ Channels ] 
+####Channels 
 This is the # of AudioSources that will be created to play AudioClips.
 The more sources the less likely you'll have to create an additional AudioSource.
 *Additional AudioSources can be created with `SpawnDJ` during runtime*
 
-[ Sfx and Background Volume ] 
+####Sfx / Background Volume
 The default values for the AudioSources to be created.
 *Can be changed during runtime with `SpawnDJ` and reset to these defaults at anytime*
 
