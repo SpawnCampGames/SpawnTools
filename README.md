@@ -22,10 +22,12 @@ from anywhere in your project.
 #### _Channels_
 This is the # of AudioSources that will be created to play AudioClips.
 The more sources the less likely you'll have to create an additional AudioSource.
+
 *Additional AudioSources can be created with `SpawnDJ` during runtime*
 
 #### _Sfx / Background Volume_
 The default values for the AudioSources to be created.
+
 *Can be changed during runtime with `SpawnDJ` and reset to these defaults at anytime*
 
 
@@ -33,6 +35,7 @@ The default values for the AudioSources to be created.
 ### 📄 SpawnDJ.cs
 ---
 *The singleton that's created by SpawnAudio.cs. Allows you to call basic functions to control the audiosources*
+
 **This Component sits alongside the SpawnAudio Component but is Hidden in the Hierarchy**
 
 
