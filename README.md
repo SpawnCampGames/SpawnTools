@@ -21,17 +21,22 @@ from anywhere in your project.
 
 #### _Channels_
 
-This is the number of AudioSources that will be created to play AudioClips.
+The number of AudioSources that will be created to play AudioClips.
 The more sources the less likely you'll have to create an additional AudioSource.
 
 #### _Sfx / Background Volume_
 
 The default values for the AudioSources to be created.
 
+#### _Ambient Audio CLips_
+
+Drag in clips for your background audio. They will automatically be assigned and loop during runtime.
+
+Fill Out the inspector and Generate AudioSources
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudioHierarchy.png)
 
-Fill out the inspector and Generate AudioSources
-
+The Component will gray itself out after Generating. Any additional changes to the AudioSources
+can be made through the `SpawnDJ` at runtime.
 
 ### 📄 SpawnDJ.cs
 ---
