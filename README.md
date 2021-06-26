@@ -67,10 +67,33 @@ To Play an Audio Clip use:
 `SpawnDJ.Instance.PlayClip();` // and pass in an audioClip  
 `SpawnDJ.Instance.PlayClip(yourAudioClip);`
 
-`SpawnDJ` will search through all the available AudioSources and use the first one thats *not currently playing* to play the AudioClip.  
+`SpawnDJ` will search through all AudioSources and use the first one thats *not currently playing* to play the AudioClip.  
 If all AudioSources are being used a new AudioSources will be created and added to the `additionalSources` list.   
-As soon as the clip is finished the clip will be removed from the list and Destroyed.
+As soon as the clip is finished the clip will be removed from the list and destroyed.
 
+#### List of Functions Currently Available
 
-
-
+Managing AudioSources
+- `CreateNewAudioSource();`
+- `RemoveExtraAudioSources();`
+Muting
+- `MuteAllAudio();`
+- `MuteBackgroundAudio();`
+- `MuteSfx();`
+- `UnmuteAllAudio();`
+- `UnmuteBackgroundAudio();`
+- `UnmuteSfx();`
+Pausing
+- `PauseAllAudio();`
+- `PauseBackgroundAudio();`
+- `PauseSfx();`
+- `UnPauseAllAudio();`
+- `UnPauseBackgroundAudio();`
+- `UnPauseSfx();`
+Volume
+- `SetMasterVolume(volume);`
+- `RecoverMasterVolume();`
+- `SetSfxVolume(volume);`
+- `RecoverSfxVolume();`
+- `SetBackgroundVolume(volume);`
+- `RecoverBackgroundVolume();`
