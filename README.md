@@ -40,7 +40,8 @@ can be made through the `SpawnDJ` at runtime.
 
 ### 📄 SpawnDJ.cs
 ---
-*Singleton that's created by `SpawnAudio`. Allows you to call basic functions to control the AudioSources*
+*Singleton that's created by `SpawnAudio`.
+*Allows you to call basic functions to control the AudioSources*
 
 **This Component sits alongside the SpawnAudio Component but is Hidden in the Hierarchy**
 
@@ -49,7 +50,7 @@ Contains (2) Lists.
 - `backgroundSources` // list of your background loop sources
 
 Possibly a third.
-- `additionalSources` // any audiosource created during runtimea
+- `additionalSources` // any audiosource created during runtime
 
 
 
