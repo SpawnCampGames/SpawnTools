@@ -1,23 +1,23 @@
 # SpawnTools
  A collection of Unity Tools
 
-## Spawn Audio v1
-   Spawn Audio is a collection of (3) scripts that simplify the process of creating an audio system in your project.  
+## SpawnAudio v1
+Spawn Audio is a collection of (3) scripts that simplify the process of creating an audio system in your project.  
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
 needed to have a working system as soon as you Play ▶️
 
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudio.png)
 
-   It works by creating a singleton, `SpawnDJ`, that contains a list of Methods for manipulating
+It works by creating a singleton, `SpawnDJ`, that contains a list of Methods for manipulating
 the AudioSources just created. To play audio you just pass in a clip.
 
-   To call any of these functions or to play audio just call `SpawnDJ.Instance.SomeFunction();` 
+To call any of these functions or to play audio just call `SpawnDJ.Instance.SomeFunction();` 
 from anywhere in your project.
 
 
 ### 📄 SpawnAudio.cs
 ---
-*-Main script, and responsible for creating the GameObjects, AudioSources, and `SpawnDJ`-*
+*- Main script, and Responsible for creating the GameObjects, AudioSources, and `SpawnDJ` -*
 
 #### _Channels_
 
@@ -42,27 +42,27 @@ Any additional changes to the AudioSources can be made through the `SpawnDJ` at 
 
 ### 📄 SpawnDJ.cs
 ---
-*-Singleton that's created by `SpawnAudio`-*
+*- Singleton that's created by `SpawnAudio` -*
 
 *Allows you to call basic functions to control the AudioSources  
 This Component sits alongside the SpawnAudio Component but is Hidden in the Hierarchy*
 
-Contains (2) Lists of <AudioSources>.
+Contains (2) Lists of `<AudioSources>`
 - `audioSources` // list of your sound effect sources
 - `backgroundSources` // list of your background loop sources
 
 and possibly a third.
 - `additionalSources` // any audiosource created during runtime
 
-To gain access to these Lists use:
+### To gain access to these Lists use:
 
 `SpawnDJ.audioSources;` or `SpawnDJ.backgroundSources;`
 
-Call a function from the SpawnDJ class from anywhere in your project with:
+### Call a function from the SpawnDJ class from anywhere in your project with:
 
 `SpawnDJ.Instance.Function();`
 
-To Play an Audio Clip use:
+### To Play an Audio Clip use:
 
 `SpawnDJ.Instance.PlayClip();` // and pass in an audioClip  
 `SpawnDJ.Instance.PlayClip(yourAudioClip);`
