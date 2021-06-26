@@ -9,8 +9,7 @@ needed to have a working system as soon as you Play ▶️
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudio.png)
 
 It works by creating a singleton, `SpawnDJ`, that contains a list of Methods for manipulating
-the AudioSources just created.  
-To play audio you just pass in a clip.
+the AudioSources just created. To play audio you just pass in a clip.
 
 To call any of these functions or to play audio just call `SpawnDJ.Instance.SomeFunction();` 
 from anywhere in your project.
@@ -22,19 +21,20 @@ from anywhere in your project.
 
 #### _Channels_
 
----The number of AudioSources that will be created to play AudioClips.
----The more sources the less likely you'll have to create an additional AudioSource.
+	The number of AudioSources that will be created to play AudioClips.
+	The more sources the less likely you'll have to create an additional AudioSource.
 
 #### _Sfx / Background Volume_
 
---- The default values for the AudioSources to be created.
+	The default values for the AudioSources to be created.
 
 #### _Ambient Audio CLips_
 
---- Drag in clips for your background audio.  
---- They will automatically be assigned and loop during runtime.
+	Drag in clips for your background audio.  
+	They will automatically be assigned and loop during runtime.
 
-Fill Out the inspector and Generate AudioSources
+Fill Out the inspector and Generate AudioSources  
+
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudioHierarchy.png)
 
 The Component will gray itself out after Generating.  
