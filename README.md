@@ -56,7 +56,7 @@ and possibly a third.
 
 ### To gain access to these Lists use:
 
-`SpawnDJ.audioSources;` or `SpawnDJ.backgroundSources;`
+`SpawnDJ.Instance.audioSources;` or `SpawnDJ.Instance.backgroundSources;`
 
 ### Call a function from the SpawnDJ class from anywhere in your project with:
 
