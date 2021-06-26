@@ -5,7 +5,7 @@
 ---
 Spawn Audio is a collection of (3) scripts that simplify the process of creating an audio system in your project.  
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
-needed to have a working system soon as you Play ▶️
+needed to have an audio system ready to Play ▶️
 
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudio.png)
 
