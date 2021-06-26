@@ -2,7 +2,6 @@
  A collection of Unity Tools
 
 ## Spawn Audio
-======
 
 Spawn Audio is a collection of three scripts that simplify the process of creating a audio system in your project.
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
