@@ -28,20 +28,23 @@ The more sources the less likely you'll have to create an additional AudioSource
 
 The default values for the AudioSources to be created.
 
+![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudioHierarchy.png)
+
+Fill out the inspector and Generate AudioSources
+
 
 ### 📄 SpawnDJ.cs
 ---
-*The singleton that's created by SpawnAudio.cs. Allows you to call basic functions to control the audiosources*
+*Singleton that's created by `SpawnAudio`. Allows you to call basic functions to control the AudioSources*
+
+
 
 **This Component sits alongside the SpawnAudio Component but is Hidden in the Hierarchy**
-
-
 
 Call a function from the SpawnDJ class from anywhere in your project with:
 
 `SpawnDJ.Instance.Function();`
 
-![logo](https://spawncampgames.github.io/img/maincolorized.png)
 
 
 
