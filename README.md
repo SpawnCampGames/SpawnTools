@@ -27,12 +27,12 @@ from anywhere in your project.
 
 #### _Sfx / Background Volume_
 
----The default values for the AudioSources to be created.
+--- The default values for the AudioSources to be created.
 
 #### _Ambient Audio CLips_
 
----Drag in clips for your background audio.  
----They will automatically be assigned and loop during runtime.
+--- Drag in clips for your background audio.  
+--- They will automatically be assigned and loop during runtime.
 
 Fill Out the inspector and Generate AudioSources
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudioHierarchy.png)
