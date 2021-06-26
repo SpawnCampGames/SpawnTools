@@ -42,7 +42,7 @@ can be made through the `SpawnDJ` at runtime.
 ---
 *Singleton that's created by `SpawnAudio`.*
 
-*Allows you to call basic functions to control the AudioSources
+*Allows you to call basic functions to control the AudioSources  
 This Component sits alongside the SpawnAudio Component but is Hidden in the Hierarchy*
 
 Contains (2) Lists.
