@@ -9,6 +9,8 @@ Spawn Audio is a collection of (3) scripts that simplify the process of creating
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
 needed to have an audio system ready when you hit Play ▶️
 
+[SpawnAudio.unitypackage](https://github.com/SpawnCampGames/SpawnTools/blob/main/SpawnAudio.unitypackage)
+
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudio.png)
 
 It works by creating a singleton, `SpawnDJ`, that contains a list of Methods for manipulating
