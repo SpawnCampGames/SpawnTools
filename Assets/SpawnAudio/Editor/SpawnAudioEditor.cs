@@ -35,7 +35,7 @@ namespace SpawnTools
                     sa.GenerateAudioSources();
                 }
                 GUILayout.Space(5);
-                GUI.backgroundColor = Color.red;
+                GUI.backgroundColor = Color.green;
                 if (GUILayout.Button("Destroy and Reset"))
                 {
                     sa.Reset();

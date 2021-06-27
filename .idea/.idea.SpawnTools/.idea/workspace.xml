@@ -10,11 +10,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Test/SpawnAtInterval.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/SpawnAudio/Editor/SpawnAudioEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/SpawnAudio/SpawnAudio.cs" />
       <option value="$PROJECT_DIR$/Assets/SpawnAudio/SpawnDJ.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpawnAudio/Scripts/SpawnAudio.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpawnAudio/Editor/SpawnAudioEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Test/SpawnAtInterval.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1uTiSafKP6OTEioiYBgEgRunCwN" />
@@ -60,7 +65,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624695987140</updated>
-      <workItem from="1624696002922" duration="195000" />
+      <workItem from="1624696002922" duration="1319000" />
+      <workItem from="1624738340774" duration="2499000" />
     </task>
     <servers />
   </component>

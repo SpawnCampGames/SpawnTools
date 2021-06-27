@@ -21,6 +21,7 @@ namespace SpawnTools
         [Header("Ambient Audio")]
         
         public List<AudioClip> audioClips = new List<AudioClip>();
+        
         [HideInInspector]
         public bool hasGeneratedSources;
         [HideInInspector]
