@@ -145,7 +145,8 @@ Finally, just click `Generate`.
 The gameobject will be setup and an Empty with all your lights will be created, along with a default cube (for scale), and the ground plane.
 Then the component will remove itself from the GameObject, as it is no longer needed.
 
-#### Currently You can only add (3) lights, as I figured thats enough for any starting scene but to add more open SpawnScene.cs and edit the Range[()] Attribute
+#### Currently You can only add (3) Lights, as I figured thats enough for any starting scene.
+- To add more open `SpawnScene.cs` and edit the Range[()] Attribute
 ```     
 [Header("Lights")]
 [Range(0,3)] // <-- Edit
