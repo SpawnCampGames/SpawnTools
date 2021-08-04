@@ -4,8 +4,8 @@
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/logo.png)
 
 ## Tools
-- SpawnAudio
-- SpawnScene
+- [SpawnAudio](https://github.com/SpawnCampGames/SpawnTools#-spawnaudio-v1)
+- [SpawnScene](https://github.com/SpawnCampGames/SpawnTools#-spawnscene-v1)
 
 
 ## 🔊 SpawnAudio v1
@@ -113,6 +113,8 @@ As soon as the clip is finished the clip will be removed from the list and destr
 
 
 
+
+
 ## 🏠 SpawnScene v1
 Spawn Scene is a collection of (2) scripts that simplify the process of creating a starting scene in your project.  
 With one button click this tool will create a starting scene with a ground plane, a default cube, and your lighting.
@@ -127,22 +129,26 @@ To setup just create an `Empty Gameobject` in your scene. I usually call mine `S
 Don't worry about the position as the script will reset it to *Zero* when you generate the scene.
 
 Then you simply add the `SpawnScene.cs` as a component.
+
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnSceneAdd.png)
 
+
 Fill out the Inspector by chosing how many lights you want in your scene, the color, and the size of the ground plane.
+
 ![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnSceneGenerate.png)
 
 Finally, just click `Generate`.
 
+![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnSceneSetup.png)
+
+
 The gameobject will be setup and an Empty with all your lights will be created, along with a default cube (for scale), and the ground plane.
 Then the component will remove itself from the GameObject, as it is no longer needed.
 
-![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnSceneSetup.png)
-
-*Currently You can only add (3) lights, as I figured thats enough for any starting scene but to add more open SpawnScene.cs and edit the Range[()] Attribute*
+##*Currently You can only add (3) lights, as I figured thats enough for any starting scene but to add more open SpawnScene.cs and edit the Range[()] Attribute*
 ```     
 [Header("Lights")]
-[Range(0,3)]
+[Range(0,3)] // <-- Edit
 public int numberOfLights = 0;
 ```
 
