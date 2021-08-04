@@ -110,10 +110,10 @@ As soon as the clip is finished the clip will be removed from the list and destr
 - `RecoverBackgroundVolume();`  
 
 #### Playing Audio
-- `PlayClip(clip);` // play an audio clip
+- `PlayClip(clip);` // play an audio clip\
 \
 \
-\
+
 ## 🏠 SpawnScene v1
 Spawn Scene is a collection of (2) scripts that simplify the process of creating a starting scene in your project.  
 With one button click this tool will create a starting scene with a ground plane, a default cube, and your lighting.
