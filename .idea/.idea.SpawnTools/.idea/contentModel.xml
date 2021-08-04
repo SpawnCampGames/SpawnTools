@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\stric\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\stric\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_SpawnTools.1149076201.00" t="ExcludeRecursive" />
+    <e p="F:\UnityProjects\SpawnTools\SpawnTools" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="SpawnAudio" t="Include">
+          <e p="Editor" t="Include">
+            <e p="SpawnAudioEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="SpawnAudio.cs" t="Include" />
+            <e p="SpawnDJ.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SpawnScene" t="Include">
+          <e p="Editor" t="Include">
+            <e p="SpawnSceneEditor.cs" t="Include" />
+          </e>
+          <e p="SpawnScene.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SpawnTools.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

@@ -1,7 +1,11 @@
 # SpawnTools
  A collection of Unity Tools
 
-![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/logo.png)
+![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/logo.png)
+
+## Tools
+- SpawnAudio
+- SpawnScene
 
 
 ## 🔊 SpawnAudio v1
@@ -11,7 +15,7 @@ needed to have an audio system ready when you hit Play ▶️
 
 [SpawnAudio.unitypackage](https://github.com/SpawnCampGames/SpawnTools/blob/main/SpawnAudio.unitypackage)
 
-![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudio.png)
+![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnAudio.png)
 
 It works by creating a singleton, `SpawnDJ`, that contains a list of Methods for manipulating
 the AudioSources just created. To play audio you just pass in a clip.
@@ -39,7 +43,7 @@ from anywhere in your project.
 
 Fill Out the inspector and Generate AudioSources  
 
-![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/SpawnAudioHierarchy.png)
+![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnAudioHierarchy.png)
 
 The Component will gray itself out after Generating.  
 Any additional changes to the AudioSources can be made through the `SpawnDJ` at runtime.
@@ -106,3 +110,39 @@ As soon as the clip is finished the clip will be removed from the list and destr
 
 #### Playing Audio
 - `PlayClip(clip);` // play an audio clip
+
+
+
+## 🏠 SpawnScene v1
+Spawn Scene is a collection of (2) scripts that simplify the process of creating a starting scene in your project.  
+With one button click this tool will create a starting scene with a ground plane, a default cube, and your lighting.
+You'll be set up and ready to prototype.
+
+[SpawnScene.unitypackage](https://github.com/SpawnCampGames/SpawnTools/blob/main/SpawnScene.unitypackage)
+
+## 📄 SpawnScene.cs
+#### *- Main script, and Responsible for creating the starting scene.-*
+
+To setup just create an `Empty Gameobject` in your scene. I usually call mine `SpawnScene`.
+Don't worry about the position as the script will reset it to *Zero* when you generate the scene.
+
+Then you simply add the `SpawnScene.cs` as a component.
+![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnSceneAdd.png)
+
+Fill out the Inspector by chosing how many lights you want in your scene, the color, and the size of the ground plane.
+![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnSceneGenerate.png)
+
+Finally, just click `Generate`.
+
+The gameobject will be setup and an Empty with all your lights will be created, along with a default cube (for scale), and the ground plane.
+Then the component will remove itself from the GameObject, as it is no longer needed.
+
+![logo](https://github.com/SpawnCampGames/SpawnTools/blob/main/Readme/img/SpawnSceneSetup.png)
+
+*Currently You can only add (3) lights, as I figured thats enough for any starting scene but to add more open SpawnScene.cs and edit the Range[()] Attribute*
+```     
+[Header("Lights")]
+[Range(0,3)]
+public int numberOfLights = 0;
+```
+
