@@ -6,9 +6,9 @@
 ## Tools
 - [SpawnAudio](https://github.com/SpawnCampGames/SpawnTools#-spawnaudio-v1)
 - [SpawnScene](https://github.com/SpawnCampGames/SpawnTools#-spawnscene-v1)
-\
-\
-\
+
+<br/><br/>
+
 ## 🔊 SpawnAudio v1
 Spawn Audio is a collection of (3) scripts that simplify the process of creating an audio system in your project.  
 With one button click this tool will create all the GameObjects, AudioSources, and Scripts
@@ -110,7 +110,9 @@ As soon as the clip is finished the clip will be removed from the list and destr
 - `RecoverBackgroundVolume();`  
 
 #### Playing Audio
-- `PlayClip(clip);` // play an audio clip\\\
+- `PlayClip(clip);` // play an audio clip
+
+<br/><br/>
 
 ## 🏠 SpawnScene v1
 Spawn Scene is a collection of (2) scripts that simplify the process of creating a starting scene in your project.  
