@@ -11,8 +11,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/SpawnDebug/Blip.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SpawnScene/Editor/SpawnSceneEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Projects/Narrowynn/Assets/JustPlayer/Scripts/JPPlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SpawnSearch/Editor/SpawnSearchWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SpawnSearch/Editor/SpawnSearchEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -26,8 +29,12 @@
       <option value="$PROJECT_DIR$/../../Projects/Narrowynn/Assets/JustPlayer/Scripts/JPPlayerMove.cs" />
       <option value="$PROJECT_DIR$/Assets/SpawnScene/SpawnSceneEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Rotator.cs" />
-      <option value="$PROJECT_DIR$/Assets/SpawnScene/Editor/SpawnSceneEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/SpawnScene/SpawnScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpawnScene/Editor/SpawnSceneEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpawnSearch/Editor/SpawnSearchEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpawnDebug/Blip.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpawnSearch/SpawnSearch.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpawnSearch/Editor/SpawnSearchWindow.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1uTiSafKP6OTEioiYBgEgRunCwN" />
@@ -79,7 +86,9 @@
       <workItem from="1625121940433" duration="697000" />
       <workItem from="1625193666371" duration="4491000" />
       <workItem from="1627967304142" duration="4410000" />
-      <workItem from="1628045883043" duration="2948000" />
+      <workItem from="1628045883043" duration="3765000" />
+      <workItem from="1628064526974" duration="11021000" />
+      <workItem from="1630021037231" duration="658000" />
     </task>
     <servers />
   </component>

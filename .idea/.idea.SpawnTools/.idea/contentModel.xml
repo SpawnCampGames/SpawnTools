@@ -16,11 +16,21 @@
             <e p="SpawnDJ.cs" t="Include" />
           </e>
         </e>
+        <e p="SpawnDebug" t="Include">
+          <e p="Blip.cs" t="Include" />
+        </e>
         <e p="SpawnScene" t="Include">
           <e p="Editor" t="Include">
             <e p="SpawnSceneEditor.cs" t="Include" />
           </e>
           <e p="SpawnScene.cs" t="Include" />
+        </e>
+        <e p="SpawnSearch" t="Include">
+          <e p="Editor" t="Include">
+            <e p="SpawnSearchEditor.cs" t="Include" />
+            <e p="SpawnSearchWindow.cs" t="Include" />
+          </e>
+          <e p="SpawnSearch.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
