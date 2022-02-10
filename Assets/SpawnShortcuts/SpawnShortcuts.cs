@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace UnityLibrary
+namespace SpawnTools
 {
     public class SpawnShortcuts : ScriptableObject
     {
-
         [MenuItem("GameObject/Create Spawn Empty", false, 0)]
         static public void NewEmpty()
         {
@@ -28,6 +27,8 @@ namespace UnityLibrary
             var go = Selection.activeGameObject;
             if (go != null)
             {
+                Undo.RegisterCompleteObjectUndo(go.transform, "Reset Transform");
+
                 go.transform.position = Vector3.zero;
                 go.transform.rotation = Quaternion.identity;
                 go.transform.localScale = Vector3.one;
@@ -40,6 +41,7 @@ namespace UnityLibrary
             var go = Selection.activeGameObject;
             if (go != null)
             {
+                Undo.RegisterCompleteObjectUndo(go.transform, "Reset Position");
                 go.transform.position = Vector3.zero;
             }
         }
@@ -50,8 +52,21 @@ namespace UnityLibrary
             var go = Selection.activeGameObject;
             if (go != null)
             {
+                Undo.RegisterCompleteObjectUndo(go.transform, "Escape From Parent");
                 go.transform.parent = null;
                 go.transform.position = Vector3.zero;
+            }
+        }
+
+        static public void MassRename(string name)
+        {
+            GameObject[] selectedObjects = Selection.gameObjects;
+            var i = 0;
+            foreach(GameObject selectedObject in selectedObjects)
+            {
+                Undo.RegisterCompleteObjectUndo(selectedObject.transform, "Rename GameObject");
+                selectedObject.name = name + i.ToString();
+                i++;
             }
         }
     }
