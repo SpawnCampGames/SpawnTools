@@ -16,7 +16,16 @@ namespace SpawnTools
         private void OnEnable()
         {
             gameObjectsInLayer = SpawnSearch.goList;
-            tex = SpawnSearch.spawnTex;
+
+            // Try to get the sprite
+            var textures = Resources.FindObjectsOfTypeAll<Texture2D>();
+            foreach (var texture in textures)
+            {
+                if (texture.name == "SpawnSearch")
+                {
+                     tex = texture;
+                }
+            }
         }
 
         public static void ShowWindow()

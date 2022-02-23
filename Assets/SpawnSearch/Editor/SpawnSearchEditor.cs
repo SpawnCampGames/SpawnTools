@@ -17,7 +17,7 @@ namespace SpawnTools
             base.DrawDefaultInspector();
             spawnSearch = (SpawnSearch) target;
             
-            GUIStyle centeredTextStyle = new GUIStyle("label");
+            GUIStyle centeredTextStyle = new GUIStyle("Label");
             centeredTextStyle.alignment = TextAnchor.MiddleCenter;
             GUI.backgroundColor = Color.gray;
 
@@ -30,6 +30,8 @@ namespace SpawnTools
             tagIndex = EditorGUILayout.Popup(tagIndex, tagStr);
             GUI.backgroundColor = Color.gray;
             GUILayout.EndHorizontal();
+
+            //WHY DID I ADD THIS?!
             EditorUtility.SetDirty(target);
 
             canSearchTag = tagIndex != 0;
@@ -55,7 +57,7 @@ namespace SpawnTools
                     if (spawnSearch.layer.value == 0)
                     {
                         GUI.color = Color.yellow;
-                        GUILayout.Label($"Chose layer other than Nothing", centeredTextStyle);
+                        GUILayout.Label($"Select (1) Layer", centeredTextStyle);
                     }
                     else
                     {

@@ -1,11 +1,19 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 namespace SpawnTools
 {
     public class SpawnShortcuts : ScriptableObject
     {
-        [MenuItem("GameObject/Create Spawn Empty", false, 0)]
+        [MenuItem("GameObject/Red Button", false, 0)]
+        static public void RedButton()
+        {
+            Debugs.Log("Well, gg.");
+            Debugs.Log();
+        }
+
+        [MenuItem("GameObject/Spawn Empty", false, 0)]
         static public void NewEmpty()
         {
             EditorApplication.ExecuteMenuItem("Window/General/Hierarchy");
@@ -38,6 +46,7 @@ namespace SpawnTools
         [MenuItem("GameObject/SpawnTools/Reset Position #p")]
         static public void ResetPosition()
         {
+
             var go = Selection.activeGameObject;
             if (go != null)
             {

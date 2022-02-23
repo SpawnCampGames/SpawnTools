@@ -25,22 +25,6 @@ namespace SpawnTools
 
         private int layerResult;
         
-        // Logo
-        [HideInInspector] public static Texture2D spawnTex = null;
-
-        private void OnEnable()
-        {
-            // Try to get the sprite
-            var tex = Resources.FindObjectsOfTypeAll<Texture2D>();
-            foreach (var texture in tex)
-            {
-                if (texture.name == "SpawnSearch")
-                {
-                    spawnTex = texture;
-                }
-            }
-        }
-
         public void OnValidate()
         {
             // Xheck to make sure the LayerMask only has 1 layer selected

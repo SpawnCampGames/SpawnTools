@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace SpawnTools
 {
+    //Check if theres a main camera
+    //If not create one
+
     [ExecuteInEditMode]
     public class SpawnScene : MonoBehaviour
     {
@@ -30,6 +33,8 @@ namespace SpawnTools
             
             //Lights
             GenerateLights();
+
+            Debug.LogWarning("probably a glitch.. just ignore me.");
             
             //Destroy Component
             DestroyImmediate(this);
