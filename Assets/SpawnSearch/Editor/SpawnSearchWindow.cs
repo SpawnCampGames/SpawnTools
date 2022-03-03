@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 namespace SpawnTools
 {
+
+    [ExecuteInEditMode]
     public class SpawnSearchWindow : EditorWindow
     {
         public static bool isDrawn = true;

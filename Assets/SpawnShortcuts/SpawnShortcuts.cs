@@ -6,13 +6,6 @@ namespace SpawnTools
 {
     public class SpawnShortcuts : ScriptableObject
     {
-        [MenuItem("GameObject/Red Button", false, 0)]
-        static public void RedButton()
-        {
-            Debugs.Log("Well, gg.");
-            Debugs.Log();
-        }
-
         [MenuItem("GameObject/Spawn Empty", false, 0)]
         static public void NewEmpty()
         {
@@ -61,19 +54,19 @@ namespace SpawnTools
             var go = Selection.activeGameObject;
             if (go != null)
             {
-                Undo.RegisterCompleteObjectUndo(go.transform, "Escape From Parent");
+                //Undo.RegisterCompleteObjectUndo(go.transform, "Escape From Parent");
                 go.transform.parent = null;
                 go.transform.position = Vector3.zero;
             }
         }
 
-        static public void MassRename(string name)
+        static public void MassRename(string name, Object[] objs)
         {
-            GameObject[] selectedObjects = Selection.gameObjects;
+            Object[] selectedObjects = objs;
             var i = 0;
             foreach(GameObject selectedObject in selectedObjects)
             {
-                Undo.RegisterCompleteObjectUndo(selectedObject.transform, "Rename GameObject");
+                //Undo.RegisterCompleteObjectUndo(selectedObject.transform, "Rename GameObject");
                 selectedObject.name = name + i.ToString();
                 i++;
             }
