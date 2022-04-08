@@ -4,10 +4,24 @@ using UnityEngine.SceneManagement;
 
 namespace SpawnTools
 {
-    public class SpawnShortcuts : ScriptableObject
+    public static class SpawnShortcuts
     {
+
+        [MenuItem("GameObject/3D Object/Rigidbody", false)]
+        public static void NewRigidbody()
+        {
+            EditorApplication.ExecuteMenuItem("Window/General/Hierarchy");
+            var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            go.name = "Rigidbody";
+            go.transform.position = Vector3.zero + new Vector3(0,.5f,0);
+            go.AddComponent<Rigidbody>();
+            Selection.activeGameObject = go;
+            EditorApplication.hierarchyChanged += Rename;
+        }
+
+
         [MenuItem("GameObject/Spawn Empty", false, 0)]
-        static public void NewEmpty()
+        public static void NewEmpty()
         {
             EditorApplication.ExecuteMenuItem("Window/General/Hierarchy");
             var go = new GameObject("GameObject");
@@ -23,7 +37,7 @@ namespace SpawnTools
         }
 
         [MenuItem("GameObject/SpawnTools/Reset Transform #r")]
-        static public void ResetTransform()
+        public static void ResetTransform()
         {
             var go = Selection.activeGameObject;
             if (go != null)
@@ -37,7 +51,7 @@ namespace SpawnTools
         }
 
         [MenuItem("GameObject/SpawnTools/Reset Position #p")]
-        static public void ResetPosition()
+        public static void ResetPosition()
         {
 
             var go = Selection.activeGameObject;
@@ -49,7 +63,7 @@ namespace SpawnTools
         }
 
         [MenuItem("GameObject/SpawnTools/Escape Parent #e")]
-        static public void EscapeParent()
+        public static void EscapeParent()
         {
             var go = Selection.activeGameObject;
             if (go != null)
@@ -60,13 +74,12 @@ namespace SpawnTools
             }
         }
 
-        static public void MassRename(string name, Object[] objs)
+        public static void MassRename(string name, Object[] objs)
         {
             Object[] selectedObjects = objs;
             var i = 0;
             foreach(GameObject selectedObject in selectedObjects)
             {
-                //Undo.RegisterCompleteObjectUndo(selectedObject.transform, "Rename GameObject");
                 selectedObject.name = name + i.ToString();
                 i++;
             }
